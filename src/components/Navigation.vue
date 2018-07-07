@@ -1,10 +1,8 @@
 <template>
     <div class="nav">
         <ul>
-            <li v-for="(item,index) in menuItems" :key=item.link >
-                <span :style="item.style">
-                    <router-link @click.native="highlight(index)" :to=item.link>{{item.title}}</router-link>
-                </span>
+            <li v-for="(item,index) in menuItems" :key='item.link' >
+                <router-link :style='item.style' @click.native="highlight(index)" :to='item.link'>{{item.title}}</router-link>
             </li>
         </ul>
     </div>
@@ -16,7 +14,7 @@ export default {
         return {
             previousIndex: 0,
             menuItems: [
-                {icon: '', title: 'Guide', link: '/', style: 'background: #8b6e64;' },
+                {icon: '', title: 'Guide', link: '/', style: 'color: white'},
                 {icon: '', title: 'Types', link: '/types', style: ''},
                 {icon: '', title: 'Find', link: 'find', style: ''}
             ]
@@ -28,8 +26,16 @@ export default {
             if(index != this.previousIndex){
                 this.menuItems[this.previousIndex].style = ''
                 this.previousIndex = index
-                this.menuItems[index].style = 'background: #8b6e64;'
+                this.menuItems[index].style = 'color: white'
             }            
+        }
+    },
+    
+    computed: {
+        buttonPress: function(){
+            return{
+               
+            };
         }
     }
 }
@@ -45,23 +51,24 @@ export default {
 
     .nav ul{
         list-style-type: none;
-        padding: 0;
+        padding: 16px 0;
     }
 
     .nav li{
          display:inline;
     }
 
-    .nav span{
-        border-radius: 25px;
-        padding: 10px 20px;
-        margin: 0px 10px;
-    }
-
     .nav a{
+        position: relative;
+
         color: #e5e5e5;
         text-decoration: none;
-        padding: 10px;
+        padding: 10px 20px;
+
+        background: #8b6e64;
+        box-shadow: 0px 4px #391C09;
+        border-radius: 10px;
+        margin: 0px 16px;
         
         font-size: 1rem;
         font-family: 'Bungee', cursive;
@@ -70,9 +77,12 @@ export default {
 
     .nav a:hover{
         color: white;
-    }
-
-    .nav a:hover{
         cursor: pointer;
     }
+
+    .nav a:active{
+        box-shadow: 0px 1px #391C09;
+        top: 3px;
+    }
+
 </style>

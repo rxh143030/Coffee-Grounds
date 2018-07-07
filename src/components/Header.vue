@@ -34,7 +34,7 @@ export default {
     }
 
     .head h1{
-        text-shadow: 3px 3px #391C09;
+        text-shadow: 4px 4px #391C09;
         font-family: 'Bungee', cursive;
         font-weight: 400;
         font-size: 3.75rem;
