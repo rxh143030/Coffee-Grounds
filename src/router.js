@@ -5,6 +5,8 @@ import About from './views/About.vue'
 import Types from './views/Types.vue'
 import Find from './views/Find.vue'
 
+import welcome from './views/guide-content/welcome.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -12,7 +14,7 @@ export default new Router({
     {
       path: '/',
       name: 'guide',
-      component: Guide
+      component: Guide,
     },
     {
       path: '/about',

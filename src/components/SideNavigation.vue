@@ -1,6 +1,6 @@
 <template>
     <div class="side-nav">
-        <h1>Hello</h1>
+        <h1>Hello this is guide</h1>
     </div>
 </template>
 
