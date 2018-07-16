@@ -1,6 +1,7 @@
 <template>
   <div class="guide">
     <SideNavigation></SideNavigation>
+    <router-view/>
   </div>
 </template>
 
@@ -20,5 +21,9 @@ export default {
 </script>
 
 <style>
-
+  .guide{
+    margin: 64px 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 </style>

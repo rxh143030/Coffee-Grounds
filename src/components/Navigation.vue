@@ -14,7 +14,7 @@ export default {
         return {
             previousIndex: 0,
             menuItems: [
-                {icon: '', title: 'Guide', link: '/', style: 'color: white'},
+                {icon: '', title: 'Guide', link: '/', style: 'color: black'},
                 {icon: '', title: 'Types', link: '/types', style: ''},
                 {icon: '', title: 'Find', link: 'find', style: ''}
             ]
@@ -26,7 +26,7 @@ export default {
             if(index != this.previousIndex){
                 this.menuItems[this.previousIndex].style = ''
                 this.previousIndex = index
-                this.menuItems[index].style = 'color: white'
+                this.menuItems[index].style = 'color: black'
             }            
         }
     },
@@ -55,20 +55,21 @@ export default {
     }
 
     .nav li{
-         display:inline;
+         display: inline;
     }
 
     .nav a{
         position: relative;
 
-        color: #e5e5e5;
+        color: grey;
         text-decoration: none;
         padding: 10px 20px;
 
-        background: #8b6e64;
+        background: #FED953;
         box-shadow: 0px 4px #391C09;
         border-radius: 10px;
         margin: 0px 16px;
+        border: 2px solid black;
         
         font-size: 1rem;
         font-family: 'Bungee', cursive;
@@ -76,7 +77,7 @@ export default {
     }
 
     .nav a:hover{
-        color: white;
+        color: black;
         cursor: pointer;
     }
 

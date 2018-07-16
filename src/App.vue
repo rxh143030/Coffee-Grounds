@@ -24,10 +24,8 @@ export default {
   #app{
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.10);
     margin: 20px;
-    border-radius: 25.5px;
-    border-left: 2px solid #6B493D;
-    border-right: 2px solid #6B493D;
-    border-bottom: 2px solid #6B493D;
+    border-radius: 17px;
+    border: 2px solid black;
 
   }
 </style>
