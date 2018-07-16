@@ -30,8 +30,8 @@ export default {
 
     .side-nav ul{
         list-style: none;
-        margin-left: 36px;
-        border-left: 3px solid #FED953;;
+        margin-left: 60px;
+        border-left: 3px solid #FED953;
     }
 
     .side-nav ul li{
@@ -41,7 +41,7 @@ export default {
     .side-nav h3{
         font-family: 'Roboto', sans-serif; 
         color: #363636;
-        padding-left: 62px;
+        padding-left: 86px;
         font-size: 24px;
         margin-bottom: 12px
     }

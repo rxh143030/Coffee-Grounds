@@ -1,7 +1,9 @@
 <template>
   <div class="guide">
     <SideNavigation></SideNavigation>
-    <router-view/>
+    <div class="guide-view">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -22,8 +24,33 @@ export default {
 
 <style>
   .guide{
-    margin: 64px 0px;
+    margin: 72px 0px;
     display: grid;
     grid-template-columns: 1fr 3fr;
+  }
+
+  .guide-view div{
+    padding: 0px 36px;
+    max-width: 700px;
+  }
+
+  .guide-view h1{
+    font-family: 'Bungee', cursive;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .guide-view hr{
+    margin: 8px 0;
+    color: #363636;    
+  }
+
+  .guide-view p{
+    margin: 16px 0px 0px;
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6em;
+    font-size: 15px;
+    color: #363636;
   }
 </style>
