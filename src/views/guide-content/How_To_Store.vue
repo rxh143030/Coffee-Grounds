@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>This is the how to store page</h1>
+        <h1>How to Store Coffee</h1>
+        <hr color="#FED953">
     </div>
 </template>
 

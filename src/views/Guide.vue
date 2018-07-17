@@ -38,7 +38,7 @@ export default {
     font-family: 'Bungee', cursive;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .guide-view hr{
@@ -52,5 +52,21 @@ export default {
     line-height: 1.6em;
     font-size: 15px;
     color: #363636;
+  }
+
+  .guide-view img{
+    display: block;
+    margin: 0px auto 24px;
+    width: 50%;
+
+    width: 70px;
+  }
+
+  .guide-view h3{
+    font-size: 16px;
+    color: #363636; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700;
+    margin: 16px 0px 8px;
   }
 </style>

@@ -1,8 +1,8 @@
 <template>
     <div class="head">
         <div>
-            <img src="@/images/svg/034-coffee-bean.svg" alt="">
-            <h1>COFFEE-GROUNDS</h1>
+            <img src="@/images/svg_2/034-coffee-bean.svg" alt="">
+            <h1>COFFEE GROUNDS</h1>
             
             <h3>A Guide To Coffee</h3>
         </div>

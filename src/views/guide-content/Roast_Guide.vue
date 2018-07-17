@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>This is the roast guide page</h1>
+        <h1>The Roast Guide</h1>
+        <hr color="#FED953">
     </div>
 </template>
 
